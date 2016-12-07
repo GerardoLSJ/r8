@@ -26,6 +26,7 @@
     "angular": "^1.5.9",
     "angular-snap": "git+https://github.com/jtrussell/angular-snap.js-bower.git",
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "snap.js": "^2.0.9"
   }
 }
