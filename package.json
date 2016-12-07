@@ -1,0 +1,31 @@
+{
+  "name": "r8",
+  "version": "0.0.1",
+  "description": "real-time rating app for people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GerardoLSJ/r8.git"
+  },
+  "keywords": [
+    "angular",
+    "rating",
+    "black",
+    "mirror"
+  ],
+  "author": "GerardoLSJ,sebassilva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GerardoLSJ/r8/issues"
+  },
+  "homepage": "https://github.com/GerardoLSJ/r8#readme",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-snap": "git+https://github.com/jtrussell/angular-snap.js-bower.git",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
