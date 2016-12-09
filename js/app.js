@@ -85,13 +85,13 @@ var app = angular.module('rate-app', [
     .when("/", {
         templateUrl : "../views/login.html"
     })
-    .when("/base", {
+    .when("/dashboard", {
         templateUrl : "../views/base.html"
     })
     .when("/green", {
         templateUrl : "green.html"
     })
-    .when("/blue", {
-        templateUrl : "blue.html"
+    .otherwise({
+        templateUrl : "../views/login.html"
     });
 });

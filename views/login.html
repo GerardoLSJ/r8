@@ -1,11 +1,11 @@
-<div class="wrapper">
-	<div class="container">
+<div class="wrapper-login">
+	<div ng-controller="LoginCtrl" class="container-login">
 		<h1>Welcome</h1>
 		
 		<form class="form">
 			<input type="text" placeholder="Username">
 			<input type="password" placeholder="Password">
-			<button type="submit" id="login-button">Login</button>
+			<button ng-click="submit()" type="submit" id="login-button">Login</button>
 		</form>
 	</div>
 	

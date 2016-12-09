@@ -27,9 +27,36 @@
 
     <!-- Add your site or application content here -->
 
-    <div class="">
-      <div ng-view>Welcome</div>
+<snap-drawer>
+    <div class=snap-menu>
+        <div class="sidebar-header text-center">
+            
+        </div> 
+
+        <ul class=snap-ul>
+            <li > <!-- ng-repeat="item in menuItems" ng-class="{active: $state.includes('{{item.name}}') }"-->
+                <a href="#/" ng-show="menuOpen">Home</a>
+            </li>
+        </ul>
     </div>
+</snap-drawer> 	
+	<snap-dragger></snap-dragger>
+	<snap-content snap-opt-tap-to-close="false" class="container">
+
+		<a href="" snap-toggle="left" ng-click="menuOpen = !menuOpen">
+			<span class="menutoggle">
+				<i ng-hide="menuOpen" class="fa fa-bars fa-2x" ></i>
+				<i ng-show="menuOpen" class="fa fa-times fa-2x" ></i>
+			</span>
+		</a>
+
+    <div class="wrapper-login view-animate-container">
+      <div ng-view class="view-animate">Welcome</div>
+    </div>
+	</snap-content>
+
+
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script> /*
@@ -64,8 +91,8 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="js/app.js"></script>
-    <script src="js/controllers/login.js"></script>
-    <script src="js/controllers/dashboard.js"></script>
+    <script src="js/controllers/loginController.js"></script>
+    <script src="js/controllers/dashboardController.js"></script>
     <script src="js/custom.js"></script>
     <!-- endbuild -->
   </body>
