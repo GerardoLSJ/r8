@@ -77,7 +77,7 @@ var states = [{
 
 var app = angular.module('rate-app', [
         'ngRoute',
-        'snap',
+        'angular-simple-sidebar',
         'ngAnimate'
     ])
 .config(function($routeProvider) {
