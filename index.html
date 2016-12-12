@@ -16,11 +16,7 @@
 </head>
 
 <body ng-app="rate-app" style="background-color:#333" ng-controller="SideNavCtrl">
-      <angular-simple-sidebar state="state" items="items" title="menuTitle">
-
-              <small ng-if="settings.close" class="ass-aside-menu-close ng-scope" ng-click="closeSidebar()"><!-- ngIf: !settings.closeIcon --><!-- ngIf: settings.closeIcon --><span ng-if="settings.closeIcon" class="ng-scope"><i class="fa fa-times"></i></span><!-- end ngIf: settings.closeIcon --></small>
-
-      </angular-simple-sidebar>
+      <angular-simple-sidebar state="state" items="items" title="menuTitle"></angular-simple-sidebar>
     <br>
   <section class="container">
     <div class="wrapper-login view-animate-container">
