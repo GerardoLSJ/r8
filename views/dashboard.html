@@ -1,11 +1,13 @@
-
-
-<div class="container"> 
-<h1 class="text-center">Histories</h1>
-<div class="base-content">Base content</div>
-<table></table>
+<div class="container" ng-controller="DashboardCtrl as dash">
+    <h1 class="text-center">Histories</h1>
+    <div class="container-fluid">
+        <ul ng-repeat="item in dash.histories">
+            <li>
+                <h2> {{item.name}} </h2>
+                <p>{{item.post}}</p>
+                <p>{{item.rating}}</p>
+            </li>
+        </ul>
+    </div>
+    <table></table>
 </div>
-
-	
-
-
