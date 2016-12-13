@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="icon" href="node.png" type="image/x-icon" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" href="node_modules/angular-simple-sidebar/angular-simple-sidebar.min.css" />
@@ -16,10 +17,12 @@
 </head>
 
 <body ng-app="rate-app" style="background-color:#333" ng-controller="SideNavCtrl">
-  <angular-simple-sidebar state="state" items="items" title="menuTitle"></angular-simple-sidebar>
   <section class="container">
     <div class="wrapper-login view-animate-container">
+        <angular-simple-sidebar state="state" items="items" title="menuTitle"></angular-simple-sidebar>
+
       <div ng-view class="view-animate">Welcome</div>
+      
     </div>
   </section>
   <script src="node_modules/jquery/dist/jquery.js"></script>
