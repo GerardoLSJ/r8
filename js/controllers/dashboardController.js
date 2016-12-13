@@ -12,4 +12,18 @@ app.controller('DashboardCtrl', function ($scope, $http, $rootScope) {
   });
 
 
+     $(document).ready( ()=> {
+         console.log('doc ready')
+
+         setTimeout( ()=> {
+
+	var audio = document.getElementById("sound-rate"); 
+  var rateBtn = document.getElementById("rate-btn");
+  rateBtn.addEventListener("click", function() { 
+      audio.play();
+  });
+         }, 100)
+
+     });
+
 });

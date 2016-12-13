@@ -1,3 +1,6 @@
+<audio preload="auto" id="sound-rate">
+    <source src="black_mirror_5_stars.mp3" controls></source>
+</audio>
 <div class="container" ng-controller="DashboardCtrl as dash">
     <h1 class="text-center">Histories</h1>
     <div class="container-fluid">
@@ -6,6 +9,7 @@
                 <h2> {{item.name}} </h2>
                 <p>{{item.post}}</p>
                 <p>{{item.rating}}</p>
+                <a class="btn btn-default" id="rate-btn"> rate-btn </a>
             </li>
         </ul>
     </div>
