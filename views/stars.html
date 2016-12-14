@@ -1,21 +1,19 @@
 <style>
     .rating-box {
-  border-top: 5px solid #5bb75b;
-  display: table;
+
   width: 90%;
   margin: 0 auto;
-  background-color: white;
+  background-color:transparent;
 }
 .rating-box > * {
   display: table-cell;
   vertical-align: middle;
-  padding: 0.75em 48px;
 }
 .rating-box input[type="radio"] {
   display: none;
 }
 .rating-box input[type="radio"]:checked ~ label::before {
-  color: orange;
+  color: dodgerblue ;
 }
 .rating-box label {
   display: inline-block;
@@ -29,10 +27,10 @@
   color: grey;
 }
 .rating-box label:hover::before {
-  color: green;
+  color: darkorange;
 }
 .rating-box label:hover ~ label::before {
-  color: green;
+  color: yellow;
 }
 
 .rating-labels {
@@ -42,7 +40,6 @@
 </style>
 
 <div class="shadow-box rating-box">
-        <div>Valora el trabajo de Rose Tyler</div>
         <div class="rating-labels">
              <input name="select" id="star5" type="radio" class="star"  value="5" />
             <label for="star5"></label>
@@ -58,8 +55,5 @@
 
             <input name="select" id="star1" type="radio" class="star"  value="1" />
             <label for="star1"></label>
-        </div>
-        <div>
-            <input type="submit" value="meh" />
         </div>
     </div>  
