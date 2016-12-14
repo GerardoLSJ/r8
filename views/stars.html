@@ -39,22 +39,24 @@
 
 </style>
 
-<div class="shadow-box rating-box">
-        <div class="rating-labels">
-             <input name="select" id="star5" type="radio" class="star"  value="5" />
-            <label for="star5"></label>
+                 
+    <div class="shadow-box rating-box">
+        <div class="rating-labels" >
+            {{item}}
+             <input id="{{item.name}}_star5" type="radio" class="star" ng-click="click(item)" ng-value="5" />
+            <label for="{{item.name}}_star5"></label>
 
-            <input name="select" id="star4" type="radio" class="star"  value="4" />
-            <label for="star4"></label>
+            <input id="{{item.name}}_star4" type="radio" class="star" ng-click="click(item)" ng-value="4" />
+            <label for="{{item.name}}_star4"></label>
 
-            <input name="select" id="star3" type="radio" class="star"  value="3" />
-            <label for="star3"></label>
+            <input id="{{item.name}}_star3" type="radio" class="star" ng-click="click(item)" ng-value="3" />
+            <label for="{{item.name}}_star3"></label>
 
-            <input name="select" id="star2" type="radio" class="star"  value="2" />
-            <label for="star2"></label>
+            <input id="{{item.name}}_star2" type="radio" class="star" ng-click="click(item)" ng-value="2" />
+            <label for="{{item.name}}_star2"></label>
 
-            <input name="select" id="star1" type="radio" class="star"  value="1" />
-            <label for="star1"></label>
+            <input id="{{item.name}}_star1" type="radio" class="star" ng-click="click(item)" ng-value="1" />
+            <label for="{{item.name}}_star1"></label>
         </div>
-        {{ctrl.name}}
+        
     </div>  

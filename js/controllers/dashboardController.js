@@ -8,9 +8,15 @@ app.controller('DashboardCtrl', function ($scope, $http, $rootScope) {
       link: "#/",
       icon: "fa fa-sign-out",
       target: ""
-    })
+    });
+  $scope.click = (item)=>{
+  console.log(item);
+  //console.log($scope.inputVal);
+}
   });
 
+
+/*
 
      $(document).ready( ()=> {
          console.log('doc ready')
@@ -25,5 +31,6 @@ app.controller('DashboardCtrl', function ($scope, $http, $rootScope) {
          }, 100)
 
      });
+     */
 
 });
