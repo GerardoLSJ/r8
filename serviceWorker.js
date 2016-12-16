@@ -23,14 +23,15 @@ var files = [
   'node_modules/angular-route/angular-route.js',
   'node_modules/angular-animate/angular-animate.js',
   'node_modules/angular-simple-sidebar/angular-simple-sidebar.min.js',
-  'js/app.js',
+  /*'js/app.js',
   'js/controllers/sideNavController.js',
   'js/controllers/loginController.js',
-  'js/controllers/dashboardController.js',
+  'js/controllers/dashboardController.js',  NOTE CACHED FOR DEVELOPMENT
   'js/controllers/rateStarsController.js',
   'js/directives/rate-stars.js',
   'js/custom.js',
   'json/histories.json',
+  */
   'music/star1.mp3',
   'music/star2.mp3',
   'music/star3.mp3',
