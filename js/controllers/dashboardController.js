@@ -1,6 +1,6 @@
 app.controller('DashboardCtrl', function ($scope, $http, $rootScope) {
   this.histories = {};
-  $http.get('histories.json').success(response => {
+  $http.get('json/histories.json').success(response => {
     this.histories = response.histories;
     console.log(this.histories);
     $rootScope.items.push({
