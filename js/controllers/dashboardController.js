@@ -1,7 +1,8 @@
 app.controller('DashboardCtrl', function ($scope, $http, $rootScope) {
   this.histories = {};
-  $http.get('json/histories.json').success(response => {
-    this.histories = response.histories;
+  $http.get('json/histories.json').then(response => {
+    this.histories = response.data.histories;
+    console.log(response.data);
     console.log(this.histories);
     $rootScope.items.push({
       name: "logout",
@@ -13,6 +14,8 @@ app.controller('DashboardCtrl', function ($scope, $http, $rootScope) {
   console.log(item);
   //console.log($scope.inputVal);
 }
+  }, err =>{
+    console.log(err);
   });
 
 
