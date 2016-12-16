@@ -5,7 +5,14 @@
   <meta charset="utf-8">
   <title>Versatile Metro-UI Angular Theme</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+  <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#00796B">
+  <meta name="msapplication-TileColor" content="#00796B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Progressive Web Application">
+  <meta name="application-name" content="Progressive Web Application">
+  <link rel="manifest" href="./manifest.json">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="icon" href="node.png" type="image/x-icon" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
@@ -19,12 +26,23 @@
 <body ng-app="rate-app" style="background-color:#333" ng-controller="SideNavCtrl">
   <section class="container">
     <div class="wrapper-login view-animate-container">
-        <angular-simple-sidebar state="state" items="items" title="menuTitle"></angular-simple-sidebar>
-
+      <angular-simple-sidebar state="state" items="items" title="menuTitle"></angular-simple-sidebar>
       <div ng-view class="view-animate">Welcome</div>
-      
     </div>
   </section>
+
+    <script type="text/javascript">
+  //If serviceWorker supports, then register it.
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register('./serviceWorker.js', { scope: "./" }) //setting scope of sw
+    .then(function (registration) {
+      console.info('Service worker is registered!');
+    })
+    .catch(function (error) {
+      console.error('Service worker failed ', error);
+    });
+  }
+  </script>
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/angular/angular.js"></script>
   <!--    <script src="node_modules/angular-mocks/angular-mocks.js"></script> -->
@@ -37,7 +55,6 @@
   <script src="js/controllers/dashboardController.js"></script>
   <script src="js/controllers/rateStarsController.js"></script>
   <script src="js/directives/rate-stars.js"></script>
-  
   <script src="js/custom.js"></script>
 </body>
 
